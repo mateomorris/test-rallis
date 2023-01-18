@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Primo" />
+    <title>Editorial: Colour Issue Project | Foteini Chalkia</title><!-- HEAD_svelte-1t6wdq2_START -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Styling project for a 15-year-old girl that wants to have a professional lookbook to start her modelling career.">
+    <meta name="twitter:title" content="Editorial: Colour Issue Project | Foteini Chalkia">
+    <meta name="twitter:site" content="@foteini_chalkia">
+    <meta name="twitter:handle" content="@foteini_chalkia">
+    <meta name="twitter:cardType" content="summary">
+    <meta name="twitter:description" content="Styling project for a 15-year-old girl that wants to have a professional lookbook to start her modelling career.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Editorial: Colour Issue Project | Foteini Chalkia">
+    <meta property="og:description" content="Styling project for a 15-year-old girl that wants to have a professional lookbook to start her modelling career.">
+    <meta property="og:url" content="https://www.chalkia.com/">
+    <meta property="og:locale" content="en">
+    <meta property="og:site_name" content="Bridal & Haute Coutoure | Foteini Chalkia">
+    <link rel="icon" href="https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/favicon.png">
+    <style>
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+        @font-face {
+            font-family: 'Bodoni SvtyTwo ITC TT';
+            src: url('https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/fonts/BodoniSvtyTwoITCTTBook.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Darker Grotesque Regular';
+            src: url('https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/fonts/DarkerGrotesque-Regular.woff2') format('woff2');
+            font-style: normal;
+            font-weight: normal;
+            font-display: swap;
+        }
+
+
+        @font-face {
+            font-family: 'Darker Grotesque SemiBold';
+            src: url('https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/fonts/DarkerGrotesque-SemiBold.woff2') format('woff2');
+            font-style: normal;
+            font-weight: normal;
+            font-display: swap;
+        }
+
+        html {
+
+            /* Colors */
+            --color-accent: #ffcc00;
+
+            /* Default property values */
+            --background: white;
+            --color: #222;
+            --padding: 2rem;
+            --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+            --border-radius: 8px;
+            --max-width: 1400px;
+            --border-color: #CBCACE;
+            --transition-time: 0.1s;
+            --transition: var(--transition-time) color,
+                var(--transition-time) background-color,
+                var(--transition-time) border-color,
+                var(--transition-time) text-decoration-color,
+                var(--transition-time) box-shadow, var(--transtion-time) transform;
+        }
+
+        #page {
+            font-family: 'Darker Grotesque Regular', sans-serif;
+            color: var(--color);
+            line-height: 1.6;
+            font-size: 1.2rem;
+            background: var(--background);
+        }
+
+        h1,
+        h2 {
+            font-family: 'Bodoni SvtyTwo ITC TT', serif;
+        }
+
+        .section .content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: var(--padding);
+        }
+
+        .section .content img {
+            width: 100%;
+            margin: 2rem 0;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+        }
+
+        .section .content p {
+            padding: 0.25rem 0;
+            line-height: 1.5;
+        }
+
+        .section .content a {
+            text-decoration: underline;
+        }
+
+        .section .content h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section .content h2 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .section .content h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .section .content ul {
+            list-style: disc;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .section .content ol {
+            list-style: decimal;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .section .content blockquote {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+        }
+
+        .section-container {
+            max-width: var(--max-width, 1400px);
+            margin: 0 auto;
+            padding: 3rem var(--padding, 1rem);
+        }
+
+        .heading {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .button {
+            color: var(--color);
+            cursor: pointer;
+            background: var(--color-accent);
+            border-radius: 5px;
+            padding: 8px 20px;
+            transition: var(--transition);
+        }
+
+        .button:hover {
+            color: var(--color-accent);
+            background: var(--color);
+        }
+
+        .button.inverted {
+            background: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+        }
+
+        article p {
+            padding-bottom: 0.5rem;
+        }
+    </style><!-- HEAD_svelte-1t6wdq2_END -->
+    <style>
+        #top-bar.svelte-55bh7e.svelte-55bh7e.svelte-55bh7e {
+            padding: 1rem 0 0.6rem 0;
+            border-bottom: 1px solid #ccc
+        }
+
+        #top-bar.svelte-55bh7e .container.svelte-55bh7e.svelte-55bh7e {
+            max-width: 1400px;
+            padding: 0 1rem;
+            margin: 0 auto;
+            display: flex;
+            wrap: no-wrap;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        #top-bar.svelte-55bh7e .logo.svelte-55bh7e.svelte-55bh7e {
+            font-family: 'Bodoni SvtyTwo ITC TT', serif;
+            font-size: 1.5rem
+        }
+
+        #top-bar.svelte-55bh7e .social.svelte-55bh7e.svelte-55bh7e {
+            text-align: right;
+            font-size: 1.25rem
+        }
+
+        #top-bar.svelte-55bh7e .social a.svelte-55bh7e.svelte-55bh7e {
+            display: inline-block;
+            transition: color 0.3s ease-in-out
+        }
+
+        #top-bar.svelte-55bh7e .social a.svelte-55bh7e.svelte-55bh7e:hover {
+            color: var(--color-accent)
+        }
+
+        #top-bar.svelte-55bh7e .social a.svelte-55bh7e+a.svelte-55bh7e {
+            margin-left: 0.5rem
+        }
+
+        #mobileMenu.svelte-55bh7e button.svelte-55bh7e.svelte-55bh7e {
+            z-index: 11;
+            transition: color 0.3s ease-in-out
+        }
+
+        #mobileMenu.svelte-55bh7e button.active.svelte-55bh7e.svelte-55bh7e {
+            position: fixed;
+            top: 1rem;
+            left: 1.5rem;
+            color: #fff
+        }
+
+        #mobileMenu.svelte-55bh7e button.svelte-55bh7e.svelte-55bh7e:hover {
+            color: var(--color-accent)
+        }
+
+        #mobileMenu.svelte-55bh7e #mobileMenuContent.svelte-55bh7e.svelte-55bh7e {
+            position: fixed;
+            top: 0;
+            left: 0;
+            max-width: 300px;
+            width: 0;
+            background-color: #000;
+            z-index: 10;
+            color: #fff;
+            height: 0;
+            font-size: 1.25rem;
+            line-height: 3rem;
+            transition: all 0.5s ease-in-out;
+            overflow: hidden
+        }
+
+        #mobileMenu.svelte-55bh7e #mobileMenuContent.active.svelte-55bh7e.svelte-55bh7e {
+            width: 100%;
+            height: 100vh;
+            padding: 4rem 2rem 0 2rem
+        }
+
+        #mobileMenu.svelte-55bh7e #mobileMenuContent a.svelte-55bh7e.svelte-55bh7e {
+            position: relative;
+            padding-bottom: 0.25rem
+        }
+
+        #mobileMenu.svelte-55bh7e #mobileMenuContent a.svelte-55bh7e.svelte-55bh7e::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            transition: width 0.3s ease-in-out
+        }
+
+        #mobileMenu.svelte-55bh7e #mobileMenuContent a.svelte-55bh7e.svelte-55bh7e:hover::after,
+        #mobileMenu.svelte-55bh7e #mobileMenuContent a.active.svelte-55bh7e.svelte-55bh7e::after {
+            width: 100%;
+            box-shadow: 2px 2px 3px #333
+        }
+
+        @media screen and (min-width: 480px) {
+            #top-bar.svelte-55bh7e .logo.svelte-55bh7e.svelte-55bh7e {
+                text-align: center
+            }
+
+            .container.svelte-55bh7e>div.svelte-55bh7e.svelte-55bh7e {
+                width: 33.33%
+            }
+        }
+
+        main.svelte-374nt8 .section-container.svelte-374nt8.svelte-374nt8 {
+            position: relative;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            align-items: start
+        }
+
+        main.svelte-374nt8 .section-container .gallery.svelte-374nt8.svelte-374nt8 {
+            display: flex;
+            gap: 2rem;
+            flex-direction: column
+        }
+
+        main.svelte-374nt8 .section-container .gallery img.svelte-374nt8.svelte-374nt8 {
+            margin: 0 auto;
+            border-radius: 1rem;
+            box-shadow: 2px 2px 10px #222
+        }
+
+        main.svelte-374nt8 .section-container article.svelte-374nt8.svelte-374nt8 {
+            top: 2rem;
+            width: 100%
+        }
+
+        main.svelte-374nt8 .section-container article h1.svelte-374nt8.svelte-374nt8 {
+            font-size: 3rem
+        }
+
+        main.svelte-374nt8 .section-container article h3.svelte-374nt8.svelte-374nt8 {
+            font-size: 1.5rem;
+            margin-top: -1rem;
+            margin-bottom: 2rem;
+            padding-left: 1rem
+        }
+
+        main.svelte-374nt8 .section-container article .share h4.svelte-374nt8.svelte-374nt8 {
+            font-size: 1.25rem
+        }
+
+        main.svelte-374nt8 .section-container article .share a.svelte-374nt8.svelte-374nt8 {
+            display: inline-block;
+            transition: color 0.3s ease-in-out
+        }
+
+        main.svelte-374nt8 .section-container article .share a.svelte-374nt8.svelte-374nt8:hover {
+            color: var(--color-accent)
+        }
+
+        main.svelte-374nt8 .section-container article .share a.svelte-374nt8+a.svelte-374nt8 {
+            margin-left: 0.5rem
+        }
+
+        @media screen and (min-width: 768px) {
+            main.svelte-374nt8 .section-container.svelte-374nt8.svelte-374nt8 {
+                gap: 4rem;
+                flex-wrap: nowrap
+            }
+
+            main.svelte-374nt8 .section-container article.svelte-374nt8.svelte-374nt8 {
+                position: -webkit-sticky;
+                position: sticky;
+                width: calc(50% - 1rem)
+            }
+        }
+
+        footer.svelte-ujoeq8.svelte-ujoeq8.svelte-ujoeq8 {
+            background-color: #eee
+        }
+
+        footer.svelte-ujoeq8 .section-container.svelte-ujoeq8.svelte-ujoeq8 {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            text-align: center
+        }
+
+        footer.svelte-ujoeq8 .section-container.svelte-ujoeq8>div.svelte-ujoeq8 {
+            width: 100%
+        }
+
+        footer.svelte-ujoeq8 .section-container h2.svelte-ujoeq8.svelte-ujoeq8 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem
+        }
+
+        footer.svelte-ujoeq8 .section-container a.svelte-ujoeq8.svelte-ujoeq8:hover {
+            text-decoration: underline
+        }
+
+        footer.svelte-ujoeq8 .section-container .social.svelte-ujoeq8.svelte-ujoeq8 {
+            font-size: 1.5rem;
+            margin-top: 1rem
+        }
+
+        footer.svelte-ujoeq8 .section-container .social a.svelte-ujoeq8.svelte-ujoeq8 {
+            display: inline-block
+        }
+
+        footer.svelte-ujoeq8 .section-container .social a.svelte-ujoeq8.svelte-ujoeq8:hover {
+            color: var(--color-accent)
+        }
+
+        footer.svelte-ujoeq8 .section-container .social a.svelte-ujoeq8+a.svelte-ujoeq8 {
+            margin-left: 0.5rem
+        }
+
+        footer.svelte-ujoeq8 .section-container .badges img.svelte-ujoeq8.svelte-ujoeq8 {
+            max-height: 14rem;
+            margin: 0 auto
+        }
+
+        footer.svelte-ujoeq8 .copyright.svelte-ujoeq8.svelte-ujoeq8 {
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.8rem
+        }
+
+        @media screen and (min-width: 480px) {
+            footer.svelte-ujoeq8 .section-container.svelte-ujoeq8>div.svelte-ujoeq8 {
+                width: calc(50% - 1rem)
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            footer.svelte-ujoeq8 .section-container.svelte-ujoeq8.svelte-ujoeq8 {
+                text-align: left;
+                flex-wrap: no-wrap;
+                justify-content: space-between
+            }
+
+            footer.svelte-ujoeq8 .section-container.svelte-ujoeq8>div.svelte-ujoeq8 {
+                width: auto
+            }
+        }
+    </style>
+</head>
+
+<body id="page">
+
+    <div class="section has-component" id="ovwmp">
+        <div class="component">
+            <div id="top-bar" class="svelte-55bh7e">
+                <div class="container svelte-55bh7e">
+                    <div id="mobileMenu" class="svelte-55bh7e"><button title="Menu" class="svelte-55bh7e"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="32" height="32" viewBox="0 0 24 24" class="iconify iconify--line-md"><!-- HTML_TAG_START -->
+                                <g fill="none" stroke="currentColor" stroke-dasharray="24" stroke-dashoffset="24" stroke-linecap="round" stroke-width="2">
+                                    <path d="M5 5H19">
+                                        <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="24;0" />
+                                    </path>
+                                    <path d="M5 12H19">
+                                        <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="24;0" />
+                                    </path>
+                                    <path d="M5 19H19">
+                                        <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.2s" values="24;0" />
+                                    </path>
+                                </g><!-- HTML_TAG_END -->
+                            </svg></button>
+                        <div id="mobileMenuContent" class="svelte-55bh7e"><a href="/bridal" class="svelte-55bh7e">
+                                <h3>Bridal</h3>
+                            </a><a href="/haute-couture" class="svelte-55bh7e">
+                                <h3>Haute Couture</h3>
+                            </a><a href="/about" class="svelte-55bh7e">
+                                <h3>About</h3>
+                            </a><a href="/editorials" class="svelte-55bh7e">
+                                <h3>Editorials</h3>
+                            </a><a href="/press" class="svelte-55bh7e">
+                                <h3>Press</h3>
+                            </a><a href="/contact" class="svelte-55bh7e">
+                                <h3>Contact</h3>
+                            </a></div>
+                    </div>
+                    <div class="logo svelte-55bh7e"><a href="/" class="svelte-55bh7e">CHALKIA</a></div>
+                    <div class="social svelte-55bh7e"><a href="https://www.facebook.com/chalkia.official" title="Follow us on facebook" class="svelte-55bh7e"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="0.88em" height="1em" viewBox="0 0 448 512" class="iconify iconify--fa6-brands"><!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" /><!-- HTML_TAG_END -->
+                            </svg>
+                        </a><a href="https://twitter.com/foteini_chalkia" title="Follow us on twitter" class="svelte-55bh7e"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="0.88em" height="1em" viewBox="0 0 448 512" class="iconify iconify--fa6-brands"><!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3.6 10.4.8 15.8.8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34z" /><!-- HTML_TAG_END -->
+                            </svg>
+                        </a><a href="https://www.instagram.com/foteinichalkia_/" title="Follow us on instagram" class="svelte-55bh7e"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="0.88em" height="1em" viewBox="0 0 448 512" class="iconify iconify--fa6-brands"><!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="M224 202.66A53.34 53.34 0 1 0 277.36 256A53.38 53.38 0 0 0 224 202.66Zm124.71-41a54 54 0 0 0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31 6.43a54 54 0 0 0-30.41 30.41c-8.28 21-6.43 71.05-6.43 94.33s-1.85 73.27 6.47 94.34a54 54 0 0 0 30.41 30.41c21 8.29 71 6.43 94.31 6.43s73.24 1.93 94.3-6.43a54 54 0 0 0 30.41-30.41c8.35-21 6.43-71.05 6.43-94.33s1.92-73.26-6.43-94.33ZM224 338a82 82 0 1 1 82-82a81.9 81.9 0 0 1-82 82Zm85.38-148.3a19.14 19.14 0 1 1 19.13-19.14a19.1 19.1 0 0 1-19.09 19.18ZM400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48Zm-17.12 290c-1.29 25.63-7.14 48.34-25.85 67s-41.4 24.63-67 25.85c-26.41 1.49-105.59 1.49-132 0c-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61 0-132c1.29-25.63 7.07-48.34 25.85-67s41.47-24.56 67-25.78c26.41-1.49 105.59-1.49 132 0c25.63 1.29 48.33 7.15 67 25.85s24.63 41.42 25.85 67.05c1.49 26.32 1.49 105.44 0 131.88Z" /><!-- HTML_TAG_END -->
+                            </svg>
+                        </a><a href="https://pinterest.com/Foteini_Chalkia/" title="Follow us on pinterest" class="svelte-55bh7e"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="0.88em" height="1em" viewBox="0 0 448 512" class="iconify iconify--fa6-brands"><!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="M448 80v352c0 26.5-21.5 48-48 48H154.4c9.8-16.4 22.4-40 27.4-59.3c3-11.5 15.3-58.4 15.3-58.4c8 15.3 31.4 28.2 56.3 28.2c74.1 0 127.4-68.1 127.4-152.7c0-81.1-66.2-141.8-151.4-141.8c-106 0-162.2 71.1-162.2 148.6c0 36 19.2 80.8 49.8 95.1c4.7 2.2 7.1 1.2 8.2-3.3c.8-3.4 5-20.1 6.8-27.8c.6-2.5.3-4.6-1.7-7c-10.1-12.3-18.3-34.9-18.3-56c0-54.2 41-106.6 110.9-106.6c60.3 0 102.6 41.1 102.6 99.9c0 66.4-33.5 112.4-77.2 112.4c-24.1 0-42.1-19.9-36.4-44.4c6.9-29.2 20.3-60.7 20.3-81.8c0-53-75.5-45.7-75.5 25c0 21.7 7.3 36.5 7.3 36.5c-31.4 132.8-36.1 134.5-29.6 192.6l2.2.8H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z" /><!-- HTML_TAG_END -->
+                            </svg>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section has-component" id="udbdv">
+        <div class="component">
+            <main class="svelte-374nt8">
+                <div class="section-container svelte-374nt8">
+                    <article class="svelte-374nt8">
+                        <h1 class="svelte-374nt8">Colour Issue Project</h1>
+                        <h3 class="svelte-374nt8">— Lookbook for a model to be</h3>
+                        <!-- HTML_TAG_START -->
+                        <p>Styling project for a 15-year-old girl that wants to have a professional lookbook to become a model. Object of the project was to show her feminine, except from her girly, side.</p>
+                        <p><strong>Credits</strong></p>
+                        <p>Styling: <em>Foteini Chalkia</em></p>
+                        <p>Photography: <em>WhiteOffice Gallery</em></p>
+                        <p>Mua: <em>Nona</em></p>
+                        <p>Model: <em>Nefeli Taso</em></p><!-- HTML_TAG_END -->
+                        <div class="share">
+                            <h4 class="svelte-374nt8">Share</h4>
+                            <a href="https://pinterest.com/pin/create/button/?url=&media=https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/color-issue-project-6.jpg&description=Styling%20project%20for%20a%2015-year-old%20girl%20that%20wants%20to%20have%20a%20professional%20lookbook%20to%20start%20her%20modelling%20career." target="_social" title="Pin" class="svelte-374nt8"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="24.5" height="28" viewBox="0 0 448 512" class="iconify iconify--fa6-brands"><!-- HTML_TAG_START -->
+                                    <path fill="currentColor" d="M448 80v352c0 26.5-21.5 48-48 48H154.4c9.8-16.4 22.4-40 27.4-59.3c3-11.5 15.3-58.4 15.3-58.4c8 15.3 31.4 28.2 56.3 28.2c74.1 0 127.4-68.1 127.4-152.7c0-81.1-66.2-141.8-151.4-141.8c-106 0-162.2 71.1-162.2 148.6c0 36 19.2 80.8 49.8 95.1c4.7 2.2 7.1 1.2 8.2-3.3c.8-3.4 5-20.1 6.8-27.8c.6-2.5.3-4.6-1.7-7c-10.1-12.3-18.3-34.9-18.3-56c0-54.2 41-106.6 110.9-106.6c60.3 0 102.6 41.1 102.6 99.9c0 66.4-33.5 112.4-77.2 112.4c-24.1 0-42.1-19.9-36.4-44.4c6.9-29.2 20.3-60.7 20.3-81.8c0-53-75.5-45.7-75.5 25c0 21.7 7.3 36.5 7.3 36.5c-31.4 132.8-36.1 134.5-29.6 192.6l2.2.8H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z" /><!-- HTML_TAG_END -->
+                                </svg></a>
+                            <a href="whatsapp://send?text=Editorial: Colour Issue Project | Foteini Chalkia: Styling project for a 15-year-old girl that wants to have a professional lookbook to start her modelling career. at " target="_social" title="Send via WhatsApp" class="svelte-374nt8"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="24.5" height="28" viewBox="0 0 448 512" class="iconify iconify--fa6-brands"><!-- HTML_TAG_START -->
+                                    <path fill="currentColor" d="M224 122.8c-72.7 0-131.8 59.1-131.9 131.8c0 24.9 7 49.2 20.2 70.1l3.1 5l-13.3 48.6l49.9-13.1l4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8c0-35.2-15.2-68.3-40.1-93.2c-25-25-58-38.7-93.2-38.7zm77.5 188.4c-3.3 9.3-19.1 17.7-26.7 18.8c-12.6 1.9-22.4.9-47.5-9.9c-39.7-17.2-65.7-57.2-67.7-59.8c-2-2.6-16.2-21.5-16.2-41s10.2-29.1 13.9-33.1c3.6-4 7.9-5 10.6-5c2.6 0 5.3 0 7.6.1c2.4.1 5.7-.9 8.9 6.8c3.3 7.9 11.2 27.4 12.2 29.4s1.7 4.3.3 6.9c-7.6 15.2-15.7 14.6-11.6 21.6c15.3 26.3 30.6 35.4 53.9 47.1c4 2 6.3 1.7 8.6-1c2.3-2.6 9.9-11.6 12.5-15.5c2.6-4 5.3-3.3 8.9-2c3.6 1.3 23.1 10.9 27.1 12.9s6.6 3 7.6 4.6c.9 1.9.9 9.9-2.4 19.1zM400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM223.9 413.2c-26.6 0-52.7-6.7-75.8-19.3L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5c29.9 30 47.9 69.8 47.9 112.2c0 87.4-72.7 158.5-160.1 158.5z" /><!-- HTML_TAG_END -->
+                                </svg></a>
+                            <a href="https://facebook.com/sharer/sharer.php?u=" target="_social" title="Share on facebook" class="svelte-374nt8"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="24.5" height="28" viewBox="0 0 448 512" class="iconify iconify--fa6-brands"><!-- HTML_TAG_START -->
+                                    <path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" /><!-- HTML_TAG_END -->
+                                </svg></a>
+                            <a href="https://twitter.com/intent/tweet/?text=Editorial:%20Colour%20Issue%20Project%20%7C%20Foteini%20Chalkia, Styling%20project%20for%20a%2015-year-old%20girl%20that%20wants%20to%20have%20a%20professional%20lookbook%20to%20start%20her%20modelling%20career.&hashtags=foteini_chalkia,bridal_dresses,haute_coutoure&via=@foteini_chalkia&url=" target="_social" title="Tweet" class="svelte-374nt8"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="24.5" height="28" viewBox="0 0 448 512" class="iconify iconify--fa6-brands"><!-- HTML_TAG_START -->
+                                    <path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3.6 10.4.8 15.8.8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34z" /><!-- HTML_TAG_END -->
+                                </svg></a>
+                            <a href="viber://forward?text=Editorial: Colour Issue Project | Foteini Chalkia: Styling project for a 15-year-old girl that wants to have a professional lookbook to start her modelling career. at " target="_social" title="Send via Viber" class="svelte-374nt8"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="28" height="28" viewBox="0 0 512 512" class="iconify iconify--fa6-brands"><!-- HTML_TAG_START -->
+                                    <path fill="currentColor" d="M444 49.9C431.3 38.2 379.9.9 265.3.4c0 0-135.1-8.1-200.9 52.3C27.8 89.3 14.9 143 13.5 209.5c-1.4 66.5-3.1 191.1 117 224.9h.1l-.1 51.6s-.8 20.9 13 25.1c16.6 5.2 26.4-10.7 42.3-27.8c8.7-9.4 20.7-23.2 29.8-33.7c82.2 6.9 145.3-8.9 152.5-11.2c16.6-5.4 110.5-17.4 125.7-142c15.8-128.6-7.6-209.8-49.8-246.5zM457.9 287c-12.9 104-89 110.6-103 115.1c-6 1.9-61.5 15.7-131.2 11.2c0 0-52 62.7-68.2 79c-5.3 5.3-11.1 4.8-11-5.7c0-6.9.4-85.7.4-85.7c-.1 0-.1 0 0 0c-101.8-28.2-95.8-134.3-94.7-189.8c1.1-55.5 11.6-101 42.6-131.6c55.7-50.5 170.4-43 170.4-43c96.9.4 143.3 29.6 154.1 39.4c35.7 30.6 53.9 103.8 40.6 211.1zm-139-80.8c.4 8.6-12.5 9.2-12.9.6c-1.1-22-11.4-32.7-32.6-33.9c-8.6-.5-7.8-13.4.7-12.9c27.9 1.5 43.4 17.5 44.8 46.2zm20.3 11.3c1-42.4-25.5-75.6-75.8-79.3c-8.5-.6-7.6-13.5.9-12.9c58 4.2 88.9 44.1 87.8 92.5c-.1 8.6-13.1 8.2-12.9-.3zm47 13.4c.1 8.6-12.9 8.7-12.9.1c-.6-81.5-54.9-125.9-120.8-126.4c-8.5-.1-8.5-12.9 0-12.9c73.7.5 133 51.4 133.7 139.2zM374.9 329v.2c-10.8 19-31 40-51.8 33.3l-.2-.3c-21.1-5.9-70.8-31.5-102.2-56.5c-16.2-12.8-31-27.9-42.4-42.4c-10.3-12.9-20.7-28.2-30.8-46.6c-21.3-38.5-26-55.7-26-55.7c-6.7-20.8 14.2-41 33.3-51.8h.2c9.2-4.8 18-3.2 23.9 3.9c0 0 12.4 14.8 17.7 22.1c5 6.8 11.7 17.7 15.2 23.8c6.1 10.9 2.3 22-3.7 26.6l-12 9.6c-6.1 4.9-5.3 14-5.3 14s17.8 67.3 84.3 84.3c0 0 9.1.8 14-5.3l9.6-12c4.6-6 15.7-9.8 26.6-3.7c14.7 8.3 33.4 21.2 45.8 32.9c7 5.7 8.6 14.4 3.8 23.6z" /><!-- HTML_TAG_END -->
+                                </svg></a>
+                        </div>
+                    </article>
+                    <div class="gallery svelte-374nt8"><img src="https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/color-issue-project-6.jpg" alt="" class="svelte-374nt8"><img src="https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/color-issue-project-1.jpg" alt="" class="svelte-374nt8"><img src="https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/color-issue-project-2.jpg" alt="" class="svelte-374nt8"><img src="https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/color-issue-project-3.jpg" alt="" class="svelte-374nt8"></div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="section has-component" id="zyyfu">
+        <div class="component">
+            <footer class="svelte-ujoeq8">
+                <div class="section-container svelte-ujoeq8">
+                    <div class="svelte-ujoeq8">
+                        <h2 class="svelte-ujoeq8">CHALKIA</h2>
+                        <!-- HTML_TAG_START -->
+                        <p>36 Damareos Str.</p>
+                        <p>11633 Athens, Greece</p><!-- HTML_TAG_END -->
+                        <a href="tel:00302102204390" title="Call us" class="svelte-ujoeq8">+30 210 220 4390</a>
+                        <div class="social svelte-ujoeq8"><a href="https://www.facebook.com/chalkia.official" title="Follow us on facebook" class="svelte-ujoeq8"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="0.88em" height="1em" viewBox="0 0 448 512" class="iconify iconify--fa6-brands"><!-- HTML_TAG_START -->
+                                    <path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" /><!-- HTML_TAG_END -->
+                                </svg>
+                            </a><a href="https://twitter.com/foteini_chalkia" title="Follow us on twitter" class="svelte-ujoeq8"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="0.88em" height="1em" viewBox="0 0 448 512" class="iconify iconify--fa6-brands"><!-- HTML_TAG_START -->
+                                    <path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3.6 10.4.8 15.8.8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34z" /><!-- HTML_TAG_END -->
+                                </svg>
+                            </a><a href="https://www.instagram.com/foteinichalkia_/" title="Follow us on instagram" class="svelte-ujoeq8"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="0.88em" height="1em" viewBox="0 0 448 512" class="iconify iconify--fa6-brands"><!-- HTML_TAG_START -->
+                                    <path fill="currentColor" d="M224 202.66A53.34 53.34 0 1 0 277.36 256A53.38 53.38 0 0 0 224 202.66Zm124.71-41a54 54 0 0 0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31 6.43a54 54 0 0 0-30.41 30.41c-8.28 21-6.43 71.05-6.43 94.33s-1.85 73.27 6.47 94.34a54 54 0 0 0 30.41 30.41c21 8.29 71 6.43 94.31 6.43s73.24 1.93 94.3-6.43a54 54 0 0 0 30.41-30.41c8.35-21 6.43-71.05 6.43-94.33s1.92-73.26-6.43-94.33ZM224 338a82 82 0 1 1 82-82a81.9 81.9 0 0 1-82 82Zm85.38-148.3a19.14 19.14 0 1 1 19.13-19.14a19.1 19.1 0 0 1-19.09 19.18ZM400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48Zm-17.12 290c-1.29 25.63-7.14 48.34-25.85 67s-41.4 24.63-67 25.85c-26.41 1.49-105.59 1.49-132 0c-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61 0-132c1.29-25.63 7.07-48.34 25.85-67s41.47-24.56 67-25.78c26.41-1.49 105.59-1.49 132 0c25.63 1.29 48.33 7.15 67 25.85s24.63 41.42 25.85 67.05c1.49 26.32 1.49 105.44 0 131.88Z" /><!-- HTML_TAG_END -->
+                                </svg>
+                            </a><a href="https://pinterest.com/Foteini_Chalkia/" title="Follow us on pinterest" class="svelte-ujoeq8"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="0.88em" height="1em" viewBox="0 0 448 512" class="iconify iconify--fa6-brands"><!-- HTML_TAG_START -->
+                                    <path fill="currentColor" d="M448 80v352c0 26.5-21.5 48-48 48H154.4c9.8-16.4 22.4-40 27.4-59.3c3-11.5 15.3-58.4 15.3-58.4c8 15.3 31.4 28.2 56.3 28.2c74.1 0 127.4-68.1 127.4-152.7c0-81.1-66.2-141.8-151.4-141.8c-106 0-162.2 71.1-162.2 148.6c0 36 19.2 80.8 49.8 95.1c4.7 2.2 7.1 1.2 8.2-3.3c.8-3.4 5-20.1 6.8-27.8c.6-2.5.3-4.6-1.7-7c-10.1-12.3-18.3-34.9-18.3-56c0-54.2 41-106.6 110.9-106.6c60.3 0 102.6 41.1 102.6 99.9c0 66.4-33.5 112.4-77.2 112.4c-24.1 0-42.1-19.9-36.4-44.4c6.9-29.2 20.3-60.7 20.3-81.8c0-53-75.5-45.7-75.5 25c0 21.7 7.3 36.5 7.3 36.5c-31.4 132.8-36.1 134.5-29.6 192.6l2.2.8H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z" /><!-- HTML_TAG_END -->
+                                </svg>
+                            </a></div>
+                    </div>
+                    <div class="svelte-ujoeq8">
+                        <h2 class="svelte-ujoeq8">MENU</h2>
+                        <a href="/bridal" class="svelte-ujoeq8">
+                            <h3>Bridal</h3>
+                        </a><a href="/haute-couture" class="svelte-ujoeq8">
+                            <h3>Haute Couture</h3>
+                        </a><a href="/about" class="svelte-ujoeq8">
+                            <h3>About</h3>
+                        </a><a href="/editorials" class="svelte-ujoeq8">
+                            <h3>Editorials</h3>
+                        </a><a href="/press" class="svelte-ujoeq8">
+                            <h3>Press</h3>
+                        </a><a href="/contact" class="svelte-ujoeq8">
+                            <h3>Contact</h3>
+                        </a>
+                    </div>
+                    <div class="badges svelte-ujoeq8"><img src="https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/sustainable.png" alt="Sustainable Materials" class="svelte-ujoeq8"></div>
+                </div>
+                <div class="copyright svelte-ujoeq8">© 2022 Foteini Chalkia - All rights reserved
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script type="module">
+        const path = window.location.pathname === '/' ? '' : window.location.pathname
+        const [{
+            default: App
+        }, data] = await Promise.all([
+            import(path + '/_module.js'),
+            fetch('/en.json').then(res => res.json())
+        ]).catch(e => console.error(e))
+        new App({
+            target: document.querySelector('body'),
+            hydrate: true,
+        })
+    </script>
+</body>
+
+</html>
