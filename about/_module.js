@@ -2914,19 +2914,19 @@ class Component$1 extends SvelteComponent {
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[23] = list[i].link;
-	child_ctx[24] = list[i].title;
-	child_ctx[25] = list[i].icon;
+	child_ctx[24] = list[i].link;
+	child_ctx[25] = list[i].title;
+	child_ctx[26] = list[i].icon;
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[23] = list[i].link;
+	child_ctx[24] = list[i].link;
 	return child_ctx;
 }
 
-// (139:8) {:else}
+// (140:8) {:else}
 function create_else_block$1(ctx) {
 	let icon;
 	let current;
@@ -2961,7 +2961,7 @@ function create_else_block$1(ctx) {
 	};
 }
 
-// (137:37) 
+// (138:37) 
 function create_if_block_1$1(ctx) {
 	let icon;
 	let current;
@@ -2999,7 +2999,7 @@ function create_if_block_1$1(ctx) {
 	};
 }
 
-// (135:8) {#if mobileMenu===true}
+// (136:8) {#if mobileMenu===true}
 function create_if_block$1(ctx) {
 	let icon;
 	let current;
@@ -3037,11 +3037,11 @@ function create_if_block$1(ctx) {
 	};
 }
 
-// (144:8) {#each nav as {link}}
+// (145:8) {#each nav as {link}}
 function create_each_block_1(ctx) {
 	let a_1;
 	let h3;
-	let t_value = /*link*/ ctx[23].label + "";
+	let t_value = /*link*/ ctx[24].label + "";
 	let t;
 	let a_1_href_value;
 
@@ -3063,9 +3063,9 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a_1, "href", a_1_href_value = /*link*/ ctx[23].url);
+			attr(a_1, "href", a_1_href_value = /*link*/ ctx[24].url);
 			attr(a_1, "class", "svelte-55bh7e");
-			toggle_class(a_1, "active", /*link*/ ctx[23].active === true);
+			toggle_class(a_1, "active", /*link*/ ctx[24].active === true);
 		},
 		m(target, anchor) {
 			insert_hydration(target, a_1, anchor);
@@ -3073,14 +3073,14 @@ function create_each_block_1(ctx) {
 			append_hydration(h3, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*nav*/ 2 && t_value !== (t_value = /*link*/ ctx[23].label + "")) set_data(t, t_value);
+			if (dirty & /*nav*/ 2 && t_value !== (t_value = /*link*/ ctx[24].label + "")) set_data(t, t_value);
 
-			if (dirty & /*nav*/ 2 && a_1_href_value !== (a_1_href_value = /*link*/ ctx[23].url)) {
+			if (dirty & /*nav*/ 2 && a_1_href_value !== (a_1_href_value = /*link*/ ctx[24].url)) {
 				attr(a_1, "href", a_1_href_value);
 			}
 
 			if (dirty & /*nav*/ 2) {
-				toggle_class(a_1, "active", /*link*/ ctx[23].active === true);
+				toggle_class(a_1, "active", /*link*/ ctx[24].active === true);
 			}
 		},
 		d(detaching) {
@@ -3089,7 +3089,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (153:6) {#each social as {link, title, icon}}
+// (154:6) {#each social as {link, title, icon}}
 function create_each_block(ctx) {
 	let a_1;
 	let icon;
@@ -3097,7 +3097,7 @@ function create_each_block(ctx) {
 	let a_1_href_value;
 	let a_1_title_value;
 	let current;
-	icon = new Component$1({ props: { icon: /*icon*/ ctx[25] } });
+	icon = new Component$1({ props: { icon: /*icon*/ ctx[26] } });
 
 	return {
 		c() {
@@ -3115,8 +3115,8 @@ function create_each_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a_1, "href", a_1_href_value = /*link*/ ctx[23]);
-			attr(a_1, "title", a_1_title_value = /*title*/ ctx[24]);
+			attr(a_1, "href", a_1_href_value = /*link*/ ctx[24]);
+			attr(a_1, "title", a_1_title_value = /*title*/ ctx[25]);
 			attr(a_1, "class", "svelte-55bh7e");
 		},
 		m(target, anchor) {
@@ -3127,14 +3127,14 @@ function create_each_block(ctx) {
 		},
 		p(ctx, dirty) {
 			const icon_changes = {};
-			if (dirty & /*social*/ 1) icon_changes.icon = /*icon*/ ctx[25];
+			if (dirty & /*social*/ 1) icon_changes.icon = /*icon*/ ctx[26];
 			icon.$set(icon_changes);
 
-			if (!current || dirty & /*social*/ 1 && a_1_href_value !== (a_1_href_value = /*link*/ ctx[23])) {
+			if (!current || dirty & /*social*/ 1 && a_1_href_value !== (a_1_href_value = /*link*/ ctx[24])) {
 				attr(a_1, "href", a_1_href_value);
 			}
 
-			if (!current || dirty & /*social*/ 1 && a_1_title_value !== (a_1_title_value = /*title*/ ctx[24])) {
+			if (!current || dirty & /*social*/ 1 && a_1_title_value !== (a_1_title_value = /*title*/ ctx[25])) {
 				attr(a_1, "title", a_1_title_value);
 			}
 		},
@@ -3329,7 +3329,7 @@ function create_fragment$2(ctx) {
 			current = true;
 
 			if (!mounted) {
-				dispose = listen(button, "click", /*click_handler*/ ctx[22]);
+				dispose = listen(button, "click", /*click_handler*/ ctx[23]);
 				mounted = true;
 			}
 		},
@@ -3467,6 +3467,7 @@ function instance$2($$self, $$props, $$invalidate) {
 	let { mgyoc } = $$props;
 	let { xhiwz } = $$props;
 	let { cuhkg } = $$props;
+	let { sqzpw } = $$props;
 	let mobileMenu;
 	const click_handler = () => $$invalidate(2, mobileMenu = !mobileMenu);
 
@@ -3492,6 +3493,7 @@ function instance$2($$self, $$props, $$invalidate) {
 		if ('mgyoc' in $$props) $$invalidate(19, mgyoc = $$props.mgyoc);
 		if ('xhiwz' in $$props) $$invalidate(20, xhiwz = $$props.xhiwz);
 		if ('cuhkg' in $$props) $$invalidate(21, cuhkg = $$props.cuhkg);
+		if ('sqzpw' in $$props) $$invalidate(22, sqzpw = $$props.sqzpw);
 	};
 
 	return [
@@ -3517,6 +3519,7 @@ function instance$2($$self, $$props, $$invalidate) {
 		mgyoc,
 		xhiwz,
 		cuhkg,
+		sqzpw,
 		click_handler
 	];
 }
@@ -3546,7 +3549,8 @@ class Component$2 extends SvelteComponent {
 			seo_description: 18,
 			mgyoc: 19,
 			xhiwz: 20,
-			cuhkg: 21
+			cuhkg: 21,
+			sqzpw: 22
 		});
 	}
 }
@@ -3554,6 +3558,145 @@ class Component$2 extends SvelteComponent {
 /* generated by Svelte v3.55.0 */
 
 function create_fragment$3(ctx) {
+	let div1;
+	let div0;
+	let h1;
+	let t;
+
+	return {
+		c() {
+			div1 = element("div");
+			div0 = element("div");
+			h1 = element("h1");
+			t = text("Yes!");
+			this.h();
+		},
+		l(nodes) {
+			div1 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div1_nodes = children(div1);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+			h1 = claim_element(div0_nodes, "H1", {});
+			var h1_nodes = children(h1);
+			t = claim_text(h1_nodes, "Yes!");
+			h1_nodes.forEach(detach);
+			div0_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(div0, "class", "content");
+			attr(div1, "class", "section has-content");
+			attr(div1, "id", "sqzpw");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div1, anchor);
+			append_hydration(div1, div0);
+			append_hydration(div0, h1);
+			append_hydration(h1, t);
+		},
+		p: noop,
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div1);
+		}
+	};
+}
+
+function instance$3($$self, $$props, $$invalidate) {
+	let { social } = $$props;
+	let { na } = $$props;
+	let { nav } = $$props;
+	let { a } = $$props;
+	let { add } = $$props;
+	let { addre } = $$props;
+	let { address } = $$props;
+	let { phone } = $$props;
+	let { email } = $$props;
+	let { q } = $$props;
+	let { s } = $$props;
+	let { se } = $$props;
+	let { seo } = $$props;
+	let { seo_ } = $$props;
+	let { seo_title } = $$props;
+	let { seo_descriptio } = $$props;
+	let { seo_description } = $$props;
+	let { cuhkg } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('social' in $$props) $$invalidate(0, social = $$props.social);
+		if ('na' in $$props) $$invalidate(1, na = $$props.na);
+		if ('nav' in $$props) $$invalidate(2, nav = $$props.nav);
+		if ('a' in $$props) $$invalidate(3, a = $$props.a);
+		if ('add' in $$props) $$invalidate(4, add = $$props.add);
+		if ('addre' in $$props) $$invalidate(5, addre = $$props.addre);
+		if ('address' in $$props) $$invalidate(6, address = $$props.address);
+		if ('phone' in $$props) $$invalidate(7, phone = $$props.phone);
+		if ('email' in $$props) $$invalidate(8, email = $$props.email);
+		if ('q' in $$props) $$invalidate(9, q = $$props.q);
+		if ('s' in $$props) $$invalidate(10, s = $$props.s);
+		if ('se' in $$props) $$invalidate(11, se = $$props.se);
+		if ('seo' in $$props) $$invalidate(12, seo = $$props.seo);
+		if ('seo_' in $$props) $$invalidate(13, seo_ = $$props.seo_);
+		if ('seo_title' in $$props) $$invalidate(14, seo_title = $$props.seo_title);
+		if ('seo_descriptio' in $$props) $$invalidate(15, seo_descriptio = $$props.seo_descriptio);
+		if ('seo_description' in $$props) $$invalidate(16, seo_description = $$props.seo_description);
+		if ('cuhkg' in $$props) $$invalidate(17, cuhkg = $$props.cuhkg);
+	};
+
+	return [
+		social,
+		na,
+		nav,
+		a,
+		add,
+		addre,
+		address,
+		phone,
+		email,
+		q,
+		s,
+		se,
+		seo,
+		seo_,
+		seo_title,
+		seo_descriptio,
+		seo_description,
+		cuhkg
+	];
+}
+
+class Component$3 extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$3, create_fragment$3, safe_not_equal, {
+			social: 0,
+			na: 1,
+			nav: 2,
+			a: 3,
+			add: 4,
+			addre: 5,
+			address: 6,
+			phone: 7,
+			email: 8,
+			q: 9,
+			s: 10,
+			se: 11,
+			seo: 12,
+			seo_: 13,
+			seo_title: 14,
+			seo_descriptio: 15,
+			seo_description: 16,
+			cuhkg: 17
+		});
+	}
+}
+
+/* generated by Svelte v3.55.0 */
+
+function create_fragment$4(ctx) {
 	let div3;
 	let div2;
 	let main;
@@ -3900,7 +4043,7 @@ function create_fragment$3(ctx) {
 	};
 }
 
-function instance$3($$self, $$props, $$invalidate) {
+function instance$4($$self, $$props, $$invalidate) {
 	let { social } = $$props;
 	let { na } = $$props;
 	let { nav } = $$props;
@@ -3922,6 +4065,7 @@ function instance$3($$self, $$props, $$invalidate) {
 	let { mgyoc } = $$props;
 	let { xhiwz } = $$props;
 	let { cuhkg } = $$props;
+	let { sqzpw } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
 	let { subtitle } = $$props;
@@ -3954,6 +4098,7 @@ function instance$3($$self, $$props, $$invalidate) {
 		if ('mgyoc' in $$props) $$invalidate(23, mgyoc = $$props.mgyoc);
 		if ('xhiwz' in $$props) $$invalidate(24, xhiwz = $$props.xhiwz);
 		if ('cuhkg' in $$props) $$invalidate(25, cuhkg = $$props.cuhkg);
+		if ('sqzpw' in $$props) $$invalidate(26, sqzpw = $$props.sqzpw);
 		if ('image' in $$props) $$invalidate(2, image = $$props.image);
 		if ('title' in $$props) $$invalidate(3, title = $$props.title);
 		if ('subtitle' in $$props) $$invalidate(4, subtitle = $$props.subtitle);
@@ -3986,15 +4131,16 @@ function instance$3($$self, $$props, $$invalidate) {
 		seo_descriptio,
 		mgyoc,
 		xhiwz,
-		cuhkg
+		cuhkg,
+		sqzpw
 	];
 }
 
-class Component$3 extends SvelteComponent {
+class Component$4 extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$3, create_fragment$3, safe_not_equal, {
+		init(this, options, instance$4, create_fragment$4, safe_not_equal, {
 			social: 7,
 			na: 8,
 			nav: 9,
@@ -4016,6 +4162,7 @@ class Component$3 extends SvelteComponent {
 			mgyoc: 23,
 			xhiwz: 24,
 			cuhkg: 25,
+			sqzpw: 26,
 			image: 2,
 			title: 3,
 			subtitle: 4,
@@ -4028,19 +4175,19 @@ class Component$3 extends SvelteComponent {
 
 function get_each_context$1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[23] = list[i].link;
+	child_ctx[24] = list[i].link;
 	return child_ctx;
 }
 
 function get_each_context_1$1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[23] = list[i].link;
-	child_ctx[26] = list[i].title;
-	child_ctx[27] = list[i].icon;
+	child_ctx[24] = list[i].link;
+	child_ctx[27] = list[i].title;
+	child_ctx[28] = list[i].icon;
 	return child_ctx;
 }
 
-// (103:8) {#each social as {link, title, icon}}
+// (104:8) {#each social as {link, title, icon}}
 function create_each_block_1$1(ctx) {
 	let a_1;
 	let icon;
@@ -4048,7 +4195,7 @@ function create_each_block_1$1(ctx) {
 	let a_1_href_value;
 	let a_1_title_value;
 	let current;
-	icon = new Component$1({ props: { icon: /*icon*/ ctx[27] } });
+	icon = new Component$1({ props: { icon: /*icon*/ ctx[28] } });
 
 	return {
 		c() {
@@ -4066,8 +4213,8 @@ function create_each_block_1$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a_1, "href", a_1_href_value = /*link*/ ctx[23]);
-			attr(a_1, "title", a_1_title_value = /*title*/ ctx[26]);
+			attr(a_1, "href", a_1_href_value = /*link*/ ctx[24]);
+			attr(a_1, "title", a_1_title_value = /*title*/ ctx[27]);
 			attr(a_1, "class", "svelte-ujoeq8");
 		},
 		m(target, anchor) {
@@ -4078,14 +4225,14 @@ function create_each_block_1$1(ctx) {
 		},
 		p(ctx, dirty) {
 			const icon_changes = {};
-			if (dirty & /*social*/ 1) icon_changes.icon = /*icon*/ ctx[27];
+			if (dirty & /*social*/ 1) icon_changes.icon = /*icon*/ ctx[28];
 			icon.$set(icon_changes);
 
-			if (!current || dirty & /*social*/ 1 && a_1_href_value !== (a_1_href_value = /*link*/ ctx[23])) {
+			if (!current || dirty & /*social*/ 1 && a_1_href_value !== (a_1_href_value = /*link*/ ctx[24])) {
 				attr(a_1, "href", a_1_href_value);
 			}
 
-			if (!current || dirty & /*social*/ 1 && a_1_title_value !== (a_1_title_value = /*title*/ ctx[26])) {
+			if (!current || dirty & /*social*/ 1 && a_1_title_value !== (a_1_title_value = /*title*/ ctx[27])) {
 				attr(a_1, "title", a_1_title_value);
 			}
 		},
@@ -4105,11 +4252,11 @@ function create_each_block_1$1(ctx) {
 	};
 }
 
-// (112:6) {#each nav as {link}}
+// (113:6) {#each nav as {link}}
 function create_each_block$1(ctx) {
 	let a_1;
 	let h3;
-	let t_value = /*link*/ ctx[23].label + "";
+	let t_value = /*link*/ ctx[24].label + "";
 	let t;
 	let a_1_href_value;
 
@@ -4131,9 +4278,9 @@ function create_each_block$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a_1, "href", a_1_href_value = /*link*/ ctx[23].url);
+			attr(a_1, "href", a_1_href_value = /*link*/ ctx[24].url);
 			attr(a_1, "class", "svelte-ujoeq8");
-			toggle_class(a_1, "active", /*link*/ ctx[23].active === true);
+			toggle_class(a_1, "active", /*link*/ ctx[24].active === true);
 		},
 		m(target, anchor) {
 			insert_hydration(target, a_1, anchor);
@@ -4141,14 +4288,14 @@ function create_each_block$1(ctx) {
 			append_hydration(h3, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*nav*/ 2 && t_value !== (t_value = /*link*/ ctx[23].label + "")) set_data(t, t_value);
+			if (dirty & /*nav*/ 2 && t_value !== (t_value = /*link*/ ctx[24].label + "")) set_data(t, t_value);
 
-			if (dirty & /*nav*/ 2 && a_1_href_value !== (a_1_href_value = /*link*/ ctx[23].url)) {
+			if (dirty & /*nav*/ 2 && a_1_href_value !== (a_1_href_value = /*link*/ ctx[24].url)) {
 				attr(a_1, "href", a_1_href_value);
 			}
 
 			if (dirty & /*nav*/ 2) {
-				toggle_class(a_1, "active", /*link*/ ctx[23].active === true);
+				toggle_class(a_1, "active", /*link*/ ctx[24].active === true);
 			}
 		},
 		d(detaching) {
@@ -4157,7 +4304,7 @@ function create_each_block$1(ctx) {
 	};
 }
 
-function create_fragment$4(ctx) {
+function create_fragment$5(ctx) {
 	let div7;
 	let div6;
 	let footer;
@@ -4467,7 +4614,7 @@ function create_fragment$4(ctx) {
 	};
 }
 
-function instance$4($$self, $$props, $$invalidate) {
+function instance$5($$self, $$props, $$invalidate) {
 	let { social } = $$props;
 	let { na } = $$props;
 	let { nav } = $$props;
@@ -4489,6 +4636,7 @@ function instance$4($$self, $$props, $$invalidate) {
 	let { mgyoc } = $$props;
 	let { xhiwz } = $$props;
 	let { cuhkg } = $$props;
+	let { sqzpw } = $$props;
 	let { badges } = $$props;
 	let cp = '';
 
@@ -4519,6 +4667,7 @@ function instance$4($$self, $$props, $$invalidate) {
 		if ('mgyoc' in $$props) $$invalidate(20, mgyoc = $$props.mgyoc);
 		if ('xhiwz' in $$props) $$invalidate(21, xhiwz = $$props.xhiwz);
 		if ('cuhkg' in $$props) $$invalidate(22, cuhkg = $$props.cuhkg);
+		if ('sqzpw' in $$props) $$invalidate(23, sqzpw = $$props.sqzpw);
 		if ('badges' in $$props) $$invalidate(4, badges = $$props.badges);
 	};
 
@@ -4545,15 +4694,16 @@ function instance$4($$self, $$props, $$invalidate) {
 		seo_description,
 		mgyoc,
 		xhiwz,
-		cuhkg
+		cuhkg,
+		sqzpw
 	];
 }
 
-class Component$4 extends SvelteComponent {
+class Component$5 extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$4, create_fragment$4, safe_not_equal, {
+		init(this, options, instance$5, create_fragment$5, safe_not_equal, {
 			social: 0,
 			na: 6,
 			nav: 1,
@@ -4575,6 +4725,7 @@ class Component$4 extends SvelteComponent {
 			mgyoc: 20,
 			xhiwz: 21,
 			cuhkg: 22,
+			sqzpw: 23,
 			badges: 4
 		});
 	}
@@ -4582,7 +4733,7 @@ class Component$4 extends SvelteComponent {
 
 /* generated by Svelte v3.55.0 */
 
-function instance$5($$self, $$props, $$invalidate) {
+function instance$6($$self, $$props, $$invalidate) {
 	let { social } = $$props;
 	let { na } = $$props;
 	let { nav } = $$props;
@@ -4645,11 +4796,11 @@ function instance$5($$self, $$props, $$invalidate) {
 	];
 }
 
-class Component$5 extends SvelteComponent {
+class Component$6 extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$5, null, safe_not_equal, {
+		init(this, options, instance$6, null, safe_not_equal, {
 			social: 0,
 			na: 1,
 			nav: 2,
@@ -4674,7 +4825,7 @@ class Component$5 extends SvelteComponent {
 
 /* generated by Svelte v3.55.0 */
 
-function create_fragment$5(ctx) {
+function create_fragment$6(ctx) {
 	let component_0;
 	let t0;
 	let component_1;
@@ -4684,6 +4835,8 @@ function create_fragment$5(ctx) {
 	let component_3;
 	let t3;
 	let component_4;
+	let t4;
+	let component_5;
 	let current;
 
 	component_0 = new Component({
@@ -4856,7 +5009,8 @@ function create_fragment$5(ctx) {
 				cuhkg: {
 					"title": "Duis esse dolore",
 					"subtitle": "Qui non magna"
-				}
+				},
+				sqzpw: "<h1>Yes!</h1>"
 			}
 		});
 
@@ -4922,7 +5076,6 @@ function create_fragment$5(ctx) {
 				address: "<p>36 Damareos Str.</p>\n<p>11633 Athens, Greece</p>",
 				phone: "+30 210 220 4390",
 				email: "info@chalkia.com",
-				gmfzm: {},
 				q: "Nulla elit consectetur",
 				s: "Nulla elit consectetur",
 				se: "Nulla elit consectetur",
@@ -4931,38 +5084,10 @@ function create_fragment$5(ctx) {
 				seo_title: "About | Foteini Chalkia",
 				seo_descriptio: "Id quis cupidatat",
 				seo_description: "She is inspired by silhouettes, fabrics, sounds and stories. The modern fearless woman is her muse.",
-				mgyoc: {
-					"image": {
-						"url": "https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/about.jpg",
-						"src": "https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/about.jpg",
-						"alt": "Foteini Chalkia",
-						"size": 58
-					},
-					"title": "About",
-					"subtitle": "Foteini Chalkia",
-					"text": "<p>CHALKIA is a premium fashion brand that creates statement pieces for special occasions made of quality sustainable materials and inspired by one-of-a-kind human stories which offer a unique experience to you.</p>\n<p>Foteini Chalkia invites you to her conceptual world. Her designs are known for their innovative concepts and unique aesthetic. She explores the possibilities of outfits for special occasions with the bridal and haute coutoure collections.</p>\n<p>She is inspired by silhouettes, fabrics, sounds and stories.</p>\n<p>The modern fearless woman is her muse.</p>"
-				},
-				xhiwz: {
-					"badges": {
-						"url": "https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/sustainable.png",
-						"src": "https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/sustainable.png",
-						"alt": "Sustainable Materials",
-						"size": null
-					}
-				},
 				cuhkg: {
 					"title": "Duis esse dolore",
 					"subtitle": "Qui non magna"
-				},
-				image: {
-					"url": "https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/about.jpg",
-					"src": "https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/about.jpg",
-					"alt": "Foteini Chalkia",
-					"size": 58
-				},
-				title: "About",
-				subtitle: "Foteini Chalkia",
-				text: "<p>CHALKIA is a premium fashion brand that creates statement pieces for special occasions made of quality sustainable materials and inspired by one-of-a-kind human stories which offer a unique experience to you.</p>\n<p>Foteini Chalkia invites you to her conceptual world. Her designs are known for their innovative concepts and unique aesthetic. She explores the possibilities of outfits for special occasions with the bridal and haute coutoure collections.</p>\n<p>She is inspired by silhouettes, fabrics, sounds and stories.</p>\n<p>The modern fearless woman is her muse.</p>"
+				}
 			}
 		});
 
@@ -5060,6 +5185,114 @@ function create_fragment$5(ctx) {
 					"title": "Duis esse dolore",
 					"subtitle": "Qui non magna"
 				},
+				sqzpw: "<h1>Yes!</h1>",
+				image: {
+					"url": "https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/about.jpg",
+					"src": "https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/about.jpg",
+					"alt": "Foteini Chalkia",
+					"size": 58
+				},
+				title: "About",
+				subtitle: "Foteini Chalkia",
+				text: "<p>CHALKIA is a premium fashion brand that creates statement pieces for special occasions made of quality sustainable materials and inspired by one-of-a-kind human stories which offer a unique experience to you.</p>\n<p>Foteini Chalkia invites you to her conceptual world. Her designs are known for their innovative concepts and unique aesthetic. She explores the possibilities of outfits for special occasions with the bridal and haute coutoure collections.</p>\n<p>She is inspired by silhouettes, fabrics, sounds and stories.</p>\n<p>The modern fearless woman is her muse.</p>"
+			}
+		});
+
+	component_4 = new Component$5({
+			props: {
+				social: [
+					{
+						"title": "Follow us on facebook",
+						"link": "https://www.facebook.com/chalkia.official",
+						"icon": "fa6-brands:square-facebook"
+					},
+					{
+						"title": "Follow us on twitter",
+						"link": "https://twitter.com/foteini_chalkia",
+						"icon": "fa6-brands:square-twitter"
+					},
+					{
+						"title": "Follow us on instagram",
+						"link": "https://www.instagram.com/foteinichalkia_/",
+						"icon": "fa6-brands:square-instagram"
+					},
+					{
+						"title": "Follow us on pinterest",
+						"link": "https://pinterest.com/Foteini_Chalkia/",
+						"icon": "fa6-brands:square-pinterest"
+					}
+				],
+				na: [{}, {}],
+				nav: [
+					{
+						"link": {
+							"label": "Bridal",
+							"url": "/bridal",
+							"active": false
+						}
+					},
+					{
+						"link": {
+							"label": "Haute Couture",
+							"url": "/haute-couture",
+							"active": false
+						}
+					},
+					{
+						"link": { "label": "About", "url": "/about" }
+					},
+					{
+						"link": {
+							"label": "Editorials",
+							"url": "/editorials"
+						}
+					},
+					{
+						"link": { "label": "Press", "url": "/press" }
+					},
+					{
+						"link": { "label": "Contact", "url": "/contact" }
+					}
+				],
+				a: "Cillum aute id tempor aute. Laborum fugiat tempor laboris sunt reprehenderit.",
+				add: "Cillum aute id tempor aute. Laborum fugiat tempor laboris sunt reprehenderit.",
+				addre: "Cillum aute id tempor aute. Laborum fugiat tempor laboris sunt reprehenderit.",
+				address: "<p>36 Damareos Str.</p>\n<p>11633 Athens, Greece</p>",
+				phone: "+30 210 220 4390",
+				email: "info@chalkia.com",
+				gmfzm: {},
+				q: "Nulla elit consectetur",
+				s: "Nulla elit consectetur",
+				se: "Nulla elit consectetur",
+				seo: "Id quis cupidatat",
+				seo_: "Nulla elit consectetur",
+				seo_title: "About | Foteini Chalkia",
+				seo_descriptio: "Id quis cupidatat",
+				seo_description: "She is inspired by silhouettes, fabrics, sounds and stories. The modern fearless woman is her muse.",
+				mgyoc: {
+					"image": {
+						"url": "https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/about.jpg",
+						"src": "https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/about.jpg",
+						"alt": "Foteini Chalkia",
+						"size": 58
+					},
+					"title": "About",
+					"subtitle": "Foteini Chalkia",
+					"text": "<p>CHALKIA is a premium fashion brand that creates statement pieces for special occasions made of quality sustainable materials and inspired by one-of-a-kind human stories which offer a unique experience to you.</p>\n<p>Foteini Chalkia invites you to her conceptual world. Her designs are known for their innovative concepts and unique aesthetic. She explores the possibilities of outfits for special occasions with the bridal and haute coutoure collections.</p>\n<p>She is inspired by silhouettes, fabrics, sounds and stories.</p>\n<p>The modern fearless woman is her muse.</p>"
+				},
+				xhiwz: {
+					"badges": {
+						"url": "https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/sustainable.png",
+						"src": "https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/sustainable.png",
+						"alt": "Sustainable Materials",
+						"size": null
+					}
+				},
+				cuhkg: {
+					"title": "Duis esse dolore",
+					"subtitle": "Qui non magna"
+				},
+				sqzpw: "<h1>Yes!</h1>",
 				badges: {
 					"url": "https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/sustainable.png",
 					"src": "https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/chalkia/assets/sustainable.png",
@@ -5069,7 +5302,7 @@ function create_fragment$5(ctx) {
 			}
 		});
 
-	component_4 = new Component$5({
+	component_5 = new Component$6({
 			props: {
 				social: [
 					{
@@ -5157,6 +5390,8 @@ function create_fragment$5(ctx) {
 			create_component(component_3.$$.fragment);
 			t3 = space();
 			create_component(component_4.$$.fragment);
+			t4 = space();
+			create_component(component_5.$$.fragment);
 		},
 		l(nodes) {
 			claim_component(component_0.$$.fragment, nodes);
@@ -5168,6 +5403,8 @@ function create_fragment$5(ctx) {
 			claim_component(component_3.$$.fragment, nodes);
 			t3 = claim_space(nodes);
 			claim_component(component_4.$$.fragment, nodes);
+			t4 = claim_space(nodes);
+			claim_component(component_5.$$.fragment, nodes);
 		},
 		m(target, anchor) {
 			mount_component(component_0, target, anchor);
@@ -5179,6 +5416,8 @@ function create_fragment$5(ctx) {
 			mount_component(component_3, target, anchor);
 			insert_hydration(target, t3, anchor);
 			mount_component(component_4, target, anchor);
+			insert_hydration(target, t4, anchor);
+			mount_component(component_5, target, anchor);
 			current = true;
 		},
 		p: noop,
@@ -5189,6 +5428,7 @@ function create_fragment$5(ctx) {
 			transition_in(component_2.$$.fragment, local);
 			transition_in(component_3.$$.fragment, local);
 			transition_in(component_4.$$.fragment, local);
+			transition_in(component_5.$$.fragment, local);
 			current = true;
 		},
 		o(local) {
@@ -5197,6 +5437,7 @@ function create_fragment$5(ctx) {
 			transition_out(component_2.$$.fragment, local);
 			transition_out(component_3.$$.fragment, local);
 			transition_out(component_4.$$.fragment, local);
+			transition_out(component_5.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
@@ -5209,15 +5450,17 @@ function create_fragment$5(ctx) {
 			destroy_component(component_3, detaching);
 			if (detaching) detach(t3);
 			destroy_component(component_4, detaching);
+			if (detaching) detach(t4);
+			destroy_component(component_5, detaching);
 		}
 	};
 }
 
-class Component$6 extends SvelteComponent {
+class Component$7 extends SvelteComponent {
 	constructor(options) {
 		super();
-		init(this, options, null, create_fragment$5, safe_not_equal, {});
+		init(this, options, null, create_fragment$6, safe_not_equal, {});
 	}
 }
 
-export default Component$6;
+export default Component$7;
